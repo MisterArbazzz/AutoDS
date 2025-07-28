@@ -27,7 +27,7 @@ if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     source = "Uploaded CSV"
 else:
-    default_url = "cleaned_hotel_data.csv"  # Replace with your actual URL
+    default_url = "https://github.com/MisterArbazzz/AutoDS/blob/master/cleaned_hotel_data.csv"  # Replace with your actual URL
     df = pd.read_csv(default_url)
     source = "Default 5000-row dataset"
     st.warning("No file uploaded. Using default pre-cleaned dataset with 5000 rows.")
